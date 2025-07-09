@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Error 404 - Page Not Found</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <style>
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f4f9;
+      color: #333;
+    }
+    header {
+      background: #fff;
+      padding: 15px 30px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .logo {
+      font-weight: bold;
+    }
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+    .lang-btn {
+      background: none;
+      border: 1px solid #ccc;
+      padding: 6px 12px;
+      cursor: pointer;
+    }
+    .container {
+      text-align: center;
+      padding: 50px 20px;
+    }
+    h1 {
+      color: #aaa;
+      font-size: 24px;
+    }
+    .error-box {
+      margin-top: 30px;
+    }
+    .error-img {
+      font-size: 100px;
+      margin-bottom: 20px;
+    }
+    h2 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+    p {
+      color: #666;
+      margin-bottom: 20px;
+    }
+    .btn-group button {
+      margin: 10px;
+      padding: 10px 18px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .btn-group button:nth-child(1) {
+      background-color: #007bff;
+      color: #fff;
+    }
+    .btn-group button:nth-child(2),
+    .btn-group button:nth-child(3) {
+      background-color: #f0f0f0;
+      color: #333;
+    }
+    .newsletter {
+      margin-top: 40px;
+    }
+    .newsletter input {
+      padding: 10px;
+      width: 250px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .newsletter button {
+      padding: 10px 15px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      margin-left: 5px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    footer {
+      margin-top: 50px;
+      background: #f9f9f9;
+      padding: 20px;
+      text-align: center;
+    }
+    .footer-bottom {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <div class="logo">🔷 NTS Website Redesign</div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="careers.html">Careers</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </nav>
+      <button class="lang-btn">Multilingual</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Error 404</h1>
+    <div class="error-box">
+      <div class="error-img">📷</div>
+      <h2>Uh Oh! This Page Took a Detour.</h2>
+      <p>Looks like the page you're looking for went on an adventure. Let's get you back on the right path.</p>
+      <div class="btn-group">
+        <button onclick="goTo('index.html')">Return to Homepage</button>
+        <button onclick="goTo('services.html')">Explore Our Services</button>
+        <button onclick="goTo('blog.html')">Read Our Blog</button>
+      </div>
+    </div>
+
+    <div class="newsletter">
+      <h3>NTS Website Redesign</h3>
+      <p>Stay updated with our latest news</p>
+      <input type="email" placeholder="Enter your email" />
+      <button>Subscribe</button>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-bottom">
+      <p>© 2020 NTS Website Redesign.</p>
+    
+    </div>
+  </footer>
+
+  <script>
+    function goTo(path) {
+      window.location.href = path;
+    }
+  </script>
+</body>
+</html>
